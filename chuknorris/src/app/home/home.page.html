@@ -7,12 +7,22 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header class="header" collapse="condense">
-    <img src="assets/img/chuck-norris-sticker.png" alt="" />
-    <ion-toolbar>Want some joke kid?</ion-toolbar>
-  </ion-header>
+  <ion-header class="header" collapse="condense"> </ion-header>
 
   <div class="container">
+    <div class="image">
+      <link
+        rel="preload"
+        href="assets/img/chuck-norris-sticker.png"
+        as="image"
+      />
+      <img
+        loading="eager"
+        src="assets/img/chuck-norris-sticker.png"
+        alt="chuck"
+      />
+      <ion-toolbar>Want some joke kid?</ion-toolbar>
+    </div>
     <div class="jokediv"></div>
     <ion-button expand="block" fill="outline" (click)="displayJoke()"
       >I WANT MORE JOKES!!!</ion-button
