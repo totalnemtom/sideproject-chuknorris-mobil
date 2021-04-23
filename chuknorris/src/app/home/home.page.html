@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+    rel="stylesheet"
+  />
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header class="header" collapse="condense">
+    <img src="assets/img/chuck-norris-sticker.png" alt="" />
+    <ion-toolbar>Want some joke kid?</ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <div class="jokediv"></div>
+    <ion-button expand="block" fill="outline" (click)="displayJoke()"
+      >I WANT MORE JOKES!!!</ion-button
+    >
+    <ion-button expand="block" fill="outline" (click)="deleteJokes()"
+      >DELETE ALL JOKES!!!</ion-button
+    >
+    <p>this app uses https://api.icndb.com/jokes/random</p>
+  </div>
+</ion-content>
